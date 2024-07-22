@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background-color: #28a745;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #218838;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.image-container img {
+  width: 50%;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #309a4e;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.8rem;
+}
+
+/* Forms */
+form {
+  background-color: #e8f5e9;
+  padding: 2rem;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.grid-item {
+  background-color: #e8f5e9;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+table,
+th,
+td {
+  border: 1px solid #28a745;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Flexbox Layout for Main Content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Flexbox Layout for Navigation */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

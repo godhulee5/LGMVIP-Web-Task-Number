@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e0f7fa; /* Light cyan background for a fresh look */
+}
+
+header {
+  background: linear-gradient(
+    135deg,
+    #00796b,
+    #004d40
+  ); /* Gradient for a modern touch */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #b2dfdb; /* Light cyan text for navigation links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a.active {
+  border-bottom: 2px solid #b2dfdb;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #004d40,
+    #00796b
+  ); /* Gradient for hero section */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px; /* Rounded corners for a modern feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.portal button {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #00796b; /* Primary button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners for buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for buttons */
+}
+
+.portal button:hover {
+  background: #004d40; /* Darker shade on hover */
+}
+
+.contact-form form,
+.login-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for forms */
+  border-radius: 8px; /* Rounded corners for forms */
+}
+
+.contact-form form label,
+.login-form form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #004d40; /* Darker text color for labels */
+}
+
+.contact-form form input,
+.contact-form form textarea,
+.login-form form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #00796b; /* Border color for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.contact-form form button,
+.login-form form button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #00796b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form form button:hover,
+.login-form form button:hover {
+  background: #004d40;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Additional animations */
+button:hover {
+  animation: buttonHover 0.3s ease-in-out;
+}
+
+@keyframes buttonHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
